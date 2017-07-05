@@ -13,7 +13,7 @@ class GitHubAccountsController < ApplicationController
   # POST /git_hub_accounts
   # POST /git_hub_accounts.json
   def create
-    @git_hub_account = GitHubAccount.new(git_hub_account_params)
+    @git_hub_account = GitHubAccount.find_or_initialize_by(git_hub_account_params)
 
     respond_to do |format|
       if @git_hub_account.save
