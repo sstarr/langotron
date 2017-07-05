@@ -20,6 +20,6 @@ class GitHubAccountsControllerTest < ActionDispatch::IntegrationTest
       post git_hub_accounts_url, params: { git_hub_account: { name: 'sstarr' } }
     end
 
-    assert_redirected_to git_hub_accounts_url
+    assert_redirected_to root_url
   end
 end

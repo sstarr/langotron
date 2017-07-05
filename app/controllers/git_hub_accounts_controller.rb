@@ -17,7 +17,7 @@ class GitHubAccountsController < ApplicationController
 
     respond_to do |format|
       if @git_hub_account.save
-        format.html { redirect_to git_hub_accounts_url }
+        format.html { redirect_to root_url }
         format.json { render :show, status: :created, location: @git_hub_account }
       else
         format.html { render :new }
