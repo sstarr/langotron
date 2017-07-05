@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.github.com/users/sstarr/repos?client_id=a92d3005051f09b59e60&client_secret=70009aa996e8499cb6d02ef6dde76570cb910522
+    uri: https://api.github.com/users/sstarr/repos
     body:
       encoding: US-ASCII
       string: ''
@@ -46,8 +46,8 @@ http_interactions:
       X-Github-Media-Type:
       - github.v3; format=json
       Link:
-      - <https://api.github.com/user/18957/repos?client_id=a92d3005051f09b59e60&client_secret=70009aa996e8499cb6d02ef6dde76570cb910522&page=2>;
-        rel="next", <https://api.github.com/user/18957/repos?client_id=a92d3005051f09b59e60&client_secret=70009aa996e8499cb6d02ef6dde76570cb910522&page=2>;
+      - <https://api.github.com/user/18957/repos?page=2>;
+        rel="next", <https://api.github.com/user/18957/repos?page=2>;
         rel="last"
       Access-Control-Expose-Headers:
       - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
