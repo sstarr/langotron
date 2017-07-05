@@ -15,6 +15,8 @@ class GitHubAccountTest < ActiveSupport::TestCase
   end
 
   test 'it returns a favourite language' do
-    assert @github_account.favourite_language != nil
+    VCR.use_cassette('github_account_repos') do
+      assert @github_account.favourite_language != nil
+    end
   end
 end
