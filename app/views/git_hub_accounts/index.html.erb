@@ -5,7 +5,8 @@
 <table>
   <thead>
     <tr>
-      <th colspan="3"></th>
+      <th>Account</th>
+      <th>Favourite language</th>
     </tr>
   </thead>
 
@@ -13,6 +14,7 @@
     <% @git_hub_accounts.each do |git_hub_account| %>
       <tr>
         <td><%= git_hub_account.name %></td>
+        <td><%= git_hub_account.favourite_language %></td>
       </tr>
     <% end %>
   </tbody>
