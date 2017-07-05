@@ -1,5 +1,7 @@
 # Lang-o-Tron
 
+[![Code Climate](https://codeclimate.com/github/sstarr/langotron/badges/gpa.svg)](https://codeclimate.com/github/sstarr/langotron)
+
 An app to find a GitHub user's favourite language.
 
 ## Requirements
