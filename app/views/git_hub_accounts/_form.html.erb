@@ -1,0 +1,22 @@
+<%= form_with(model: git_hub_account, local: true) do |form| %>
+  <% if git_hub_account.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(git_hub_account.errors.count, "error") %> prohibited this github_account from being saved:</h2>
+
+      <ul>
+      <% git_hub_account.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :git_hub_account_name %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
