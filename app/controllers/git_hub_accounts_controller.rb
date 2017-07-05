@@ -5,11 +5,6 @@ class GitHubAccountsController < ApplicationController
     @git_hub_accounts = GitHubAccount.all
   end
 
-  # GET /git_hub_accounts/new
-  def new
-    @git_hub_account = GitHubAccount.new
-  end
-
   # POST /git_hub_accounts
   # POST /git_hub_accounts.json
   def create

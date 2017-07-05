@@ -12,11 +12,11 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :name %>
+    <%= form.label :name, 'Enter GitHub account name:' %>
     <%= form.text_field :name, id: :git_hub_account_name %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit 'Find favourite language' %>
   </div>
 <% end %>
