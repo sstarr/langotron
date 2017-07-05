@@ -16,8 +16,10 @@ class GitHubAccountsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should create git_hub_account" do
-    assert_difference('GitHubAccount.count') do
-      post git_hub_accounts_url, params: { git_hub_account: { name: 'sstarr' } }
+    VCR.use_cassette('github_account_repos') do
+      assert_difference('GitHubAccount.count') do
+        post git_hub_accounts_url, params: { git_hub_account: { name: 'sstarr' } }
+      end
     end
 
     assert_redirected_to root_url

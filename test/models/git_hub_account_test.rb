@@ -2,7 +2,9 @@ require 'test_helper'
 
 class GitHubAccountTest < ActiveSupport::TestCase
   def setup
-    @github_account = GitHubAccount.new(name: 'sstarr')
+    VCR.use_cassette('github_account_repos') do
+      @github_account = GitHubAccount.create(name: 'sstarr')
+    end
   end
 
   test 'it requires a name to be valid' do
@@ -15,8 +17,6 @@ class GitHubAccountTest < ActiveSupport::TestCase
   end
 
   test 'it returns a favourite language' do
-    VCR.use_cassette('github_account_repos') do
-      assert @github_account.favourite_language != nil
-    end
+    assert @github_account.favourite_language != nil
   end
 end
