@@ -1,6 +1,7 @@
 # Lang-o-Tron
 
 [![Code Climate](https://codeclimate.com/github/sstarr/langotron/badges/gpa.svg)](https://codeclimate.com/github/sstarr/langotron)
+[![CircleCI](https://circleci.com/gh/sstarr/langotron.svg?style=svg)](https://circleci.com/gh/sstarr/langotron)
 
 An app to find a GitHub user's favourite language.
 
