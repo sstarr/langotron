@@ -4,6 +4,8 @@
 
 An app to find a GitHub user's favourite language.
 
+![Screen recording](screen_recording.gif)
+
 ## Requirements
 
 - Ruby 2.4.1
