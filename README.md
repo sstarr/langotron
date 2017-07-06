@@ -28,7 +28,10 @@ We're using MiniTest, with VCR to mock calls to the GitHub API.
   - The GitHub user isn't found
   - They don't have any repositories
   - The connection to the API fails
-- Add some basic styling to the front end
 - Paginate the accounts listing
 - Make accounts stale after a given time so that, when queried, their favourite language is recalculated with a new call to the API
 - Present more data about an account's language preferences - perhaps a pie chart showing all the languages they use
+
+#### Done
+
+- ~~Add some basic styling to the front end~~
