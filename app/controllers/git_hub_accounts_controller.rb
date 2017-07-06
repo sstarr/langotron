@@ -2,7 +2,7 @@ class GitHubAccountsController < ApplicationController
   # GET /git_hub_accounts
   # GET /git_hub_accounts.json
   def index
-    @git_hub_accounts = GitHubAccount.all
+    @git_hub_accounts = GitHubAccount.order('created_at DESC')
   end
 
   # POST /git_hub_accounts

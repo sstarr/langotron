@@ -1,25 +1,27 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="twelve columns">
+    <p id="notice"><%= notice %></p>
 
-<h1>Lang-o-Tron</h1>
+    <h1>Lang-o-Tron</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Account</th>
-      <th>Favourite language</th>
-    </tr>
-  </thead>
+    <%= render 'form', git_hub_account: GitHubAccount.new %>
 
-  <tbody>
-    <% @git_hub_accounts.each do |git_hub_account| %>
-      <tr>
-        <td><%= git_hub_account.name %></td>
-        <td><%= git_hub_account.favourite_language %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+    <table class="u-full-width">
+      <thead>
+        <tr>
+          <th>Account</th>
+          <th>Favourite language</th>
+        </tr>
+      </thead>
 
-<br>
-
-<%= render 'form', git_hub_account: GitHubAccount.new %>
+      <tbody>
+        <% @git_hub_accounts.each do |git_hub_account| %>
+          <tr>
+            <td><%= git_hub_account.name %></td>
+            <td><%= git_hub_account.favourite_language %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
